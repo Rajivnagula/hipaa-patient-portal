@@ -1,0 +1,7 @@
+{
+  "BudgetName": "hipaa-monthly-budget",
+  "BudgetLimit": {"Amount": "100", "Unit": "USD"},
+  "CostFilters": {"Service": "Amazon RDS,Amazon VPC"},
+  "TimeUnit": "MONTHLY",
+  "BudgetType": "COST"
+}
