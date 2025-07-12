@@ -1,26 +1,27 @@
 # 🏥 HIPAA-Compliant Patient Portal (AWS)
+
 > **Terraform-managed infrastructure enabling healthcare applications to meet HIPAA technical safeguards §164.312**. Implements encrypted RDS, audit logging, and network isolation while reducing deployment costs by 40% vs manual setups.
 
-# 🏥 HIPAA-Compliant Patient Portal (AWS)
+![HIPAA Architecture](architecture.png)  <!-- Add after uploading diagram -->
 
-Secure cloud infrastructure for healthcare applications meeting HIPAA compliance requirements.
+## 🔍 Overview
+Secure AWS infrastructure solution for processing Protected Health Information (PHI) compliant with HIPAA technical safeguards. Features VPC isolation, KMS encryption, and audit logging to meet §164.312 requirements.
 
-## Features
-- 🔐 Encrypted RDS database with AWS KMS
-- 🛡️ VPC with public/private subnets
-- 📜 Audit logging via CloudTrail
-- 🔑 Least privilege IAM policies
+## ✨ Key Features
+| **Feature**               | **HIPAA Control**       | **Implementation**               |
+|---------------------------|-------------------------|----------------------------------|
+| 🔐 Data Encryption       | §164.312(a)(1)          | AES-256 via AWS KMS              |
+| 🛡️ Network Isolation     | §164.312(e)(1)          | Public/Private Subnets + NAT     |
+| 📜 Audit Logging         | §164.312(b)             | CloudTrail → S3                  |
+| 🔑 Access Control        | §164.312(a)(2)(i)       | IAM Least Privilege Policies     |
+| 💾 Backup Compliance     | §164.308(a)(7)(ii)(A)   | 35-day Automated Snapshots       |
 
-## Technologies
-- Terraform
-- AWS (VPC, RDS, IAM, KMS)
-- PostgreSQL
-
-## Setup
-```bash
-terraform init
-terraform apply -var="db_password=YOUR_SECURE_PASSWORD"
-# 🏥 HIPAA-Compliant Patient Portal (AWS)
-> **Terraform-managed infrastructure enabling healthcare applications to meet HIPAA technical safeguards §164.312**. Implements encrypted RDS, audit logging, and network isolation while reducing deployment costs by 40% vs manual setups.
-
-[Keep existing Features/Technologies sections]
+## ⚙️ Technologies
+```mermaid
+graph LR
+  T[Terraform] --> A[AWS]
+  A --> V[VPC]
+  A --> R[RDS]
+  A --> K[KMS]
+  A --> I[IAM]
+  A --> C[CloudTrail]
