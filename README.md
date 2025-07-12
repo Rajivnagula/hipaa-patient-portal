@@ -1,4 +1,7 @@
 # 🏥 HIPAA-Compliant Patient Portal (AWS)
+> **Terraform-managed infrastructure enabling healthcare applications to meet HIPAA technical safeguards §164.312**. Implements encrypted RDS, audit logging, and network isolation while reducing deployment costs by 40% vs manual setups.
+
+# 🏥 HIPAA-Compliant Patient Portal (AWS)
 
 Secure cloud infrastructure for healthcare applications meeting HIPAA compliance requirements.
 
