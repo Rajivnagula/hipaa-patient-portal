@@ -25,3 +25,11 @@ graph LR
   A --> K[KMS]
   A --> I[IAM]
   A --> C[CloudTrail]
+## 📚 Documentation
+
+Explore detailed technical documentation:
+
+- [Architecture Design](./ARCHITECTURE.md) - Network diagrams and component specifications  
+- [HIPAA Compliance Checklist](./COMPLIANCE.md) - Control implementation status  
+- [Cost Optimization Guide](./COST_OPTIMIZATION.md) - Monthly cost breakdown  
+- [Deployment Guide](./DEPLOYMENT.md) - Step-by-step installation instructions  
